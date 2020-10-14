@@ -1,0 +1,93 @@
+[
+  {
+    "name" : "no_bg_text_box",
+    "label" : "Text Box with no background",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : ""
+  },
+  {
+    "id" : "four_boxes",
+    "name" : "four_boxes",
+    "label" : "Four Boxes",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "default" : null
+    },
+  "children": [
+    {
+      "name": "bg_box_img",
+      "label": "Background Image",
+      "required": false,
+      "locked": false,
+      "responsive": true,
+      "resizable": true,
+      "type": "image",
+      "default": {
+        "size_type": "auto",
+        "src": "",
+        "alt": null
+      }
+    },
+    {
+      "name": "box_text",
+      "label": "Text",
+      "required": false,
+      "locked": false,
+      "validation_regex": "",
+      "allow_new_line": false,
+      "show_emoji_picker": false,
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name": "blog_name",
+      "label": "Blog Name",
+      "required": false,
+      "locked": false,
+      "validation_regex": "",
+      "allow_new_line": false,
+      "show_emoji_picker": false,
+      "type": "text",
+      "default": ""
+    },
+    {
+      "name" : "blog_link",
+      "label" : "Link to blogpost",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    },
+    {
+      "name": "blog_author",
+      "label": "Author",
+      "required": false,
+      "locked": false,
+      "validation_regex": "",
+      "allow_new_line": false,
+      "show_emoji_picker": false,
+      "type": "text",
+      "default": ""
+    }
+  ],
+  "tab" : "CONTENT",
+  "type" : "group"
+}
+]

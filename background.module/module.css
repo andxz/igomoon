@@ -1,0 +1,16 @@
+.background-module-img{
+    height: 60vh;
+    min-height: 600px;
+}
+.rocket-icon{
+    height: 50px;
+}
+.small-header-name-bg-module {
+    font-size: 15px;
+}
+.small-text-bg-module {
+    font-size: 12px;
+}
+.big-moving-text-bg-module {
+    font-size: 75px;
+}

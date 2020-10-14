@@ -1,0 +1,22 @@
+<div class="row m-0">
+
+    <div class="d-flex justify-content-center align-self-center col-3 p-0 col-3 p-0">
+        <h2 class="h2-no-bg-box font-weight-bold">{{ module.no_bg_text_box }} </h2>
+    </div>
+
+    {% for item in module.four_boxes %}
+
+        <div class="box-child position-relative bg d-flex col-3 p-0" style="background-image:url({{item.bg_box_img.src}});">
+
+            <div class="box-child__content d-flex justify-content-center align-items-center flex-column text-white font-weight-bold text-center col-12">
+
+                <h2 class="four-boxes-text position-relative z-index-2 all-ease-3">{{item.box_text}}</h2>
+                <div class="hidden-box-text position-relative z-index-2 all-ease-3">{{ item.box_text_hidden }}</div>
+
+            </div>
+
+        </div>
+
+    {% endfor %}
+
+</div>

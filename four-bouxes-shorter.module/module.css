@@ -1,0 +1,57 @@
+.h2-blue-bg-box {
+    font-size: 35px;
+}
+
+.text-for-box-child-short{
+    z-index: 2;
+    font-size: 25px;
+}
+
+.blog-name, .blog-author {
+    font-size: 10px;
+    z-index: 2;
+}
+
+.box-child-short {
+    min-height: 150px;
+    z-index: 0;
+}
+
+.box-child-short:hover:after {
+    opacity: .5;
+}
+
+.box-child-short:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #111c27;
+    opacity: .8;
+    z-index: 1;
+    transition: all ease .3s;
+}
+
+.blog-name {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.blog-author {
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.box-child-short:hover .blog-name {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.box-child-short:hover .blog-author{
+    transform: translateY(0px);
+    opacity: 1;
+}
+

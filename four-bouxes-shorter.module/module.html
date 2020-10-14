@@ -1,0 +1,19 @@
+<div class="row m-0 text-white">
+
+    <div class="d-flex col-3 p-0 bg-igoomon-light-blue justify-content-center align-items-center">
+        <h2 class="h2-blue-bg-box font-weight-bold">{{ module.no_bg_text_box }}</h2>
+    </div>
+
+    {% for item in module.four_boxes %}
+        <div class="box-child-short position-relative bg d-flex col-3 p-3 overlay overlay--hover" style="background-image:url({{item.bg_box_img.src}});">
+            <a href="{{ item.blog_link.url.href }}" class="row blog-name-author text-decoration-none">
+                <div class="d-flex justify-content-center flex-column col-12">
+                    <div class="blog-name all-ease-3 color-igomoon">{{ item.blog_name }}</div>
+                    <h2 class="text-for-box-child-short text-white font-weight-bold">{{ item.box_text }}</h2>
+                    <div class="blog-author all-ease-3 color-igomoon"><span class="text-white">By: </span> {{ item.blog_author }}</div>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+
+</div>
