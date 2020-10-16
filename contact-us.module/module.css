@@ -13,31 +13,3 @@
     font-size: 14px;
     border-bottom: 2px solid #000;
 }
-
-.hs-form-required {
-    color: #B42121;
-}
-
-input[type=text],
-input[type=email],
-input[type=tel],
-textarea {
-    border: none;
-    border-bottom: 2px solid #000;
-    width: 100%;
-  }
-
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
-}
-
-.input {
-    flex: 1;
-}
-
-.hs-richtext{
-    font-size: 15px;
-}
