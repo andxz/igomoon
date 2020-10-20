@@ -1,10 +1,7 @@
-document.getElementById("hamburger-menu-toggle").addEventListener("click", openAndCloseMenu);
+$('.mobile-toggle').on('click', function() {
+  $('html').toggleClass('menu-open');
+});
 
-function openAndCloseMenu() {
-    var x = document.getElementById("hamburger-menu");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-}
+$('.hide-kids').on('click', function() {
+  $('.hs-menu-item .hs-menu-depth-1 .hs-item-has-children').toggleClass('show-kids');
+});
