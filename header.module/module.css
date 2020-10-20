@@ -57,6 +57,8 @@
   content: '';
   position: absolute;
   top: 10px;
+  transition: all .2s linear;
+
 }
 
 .menu-open .burger-menu-icon {
@@ -78,7 +80,7 @@
   background-color: #fff;
 }
 
-span.hide-kids {
+/* span.hide-kids {
   position: absolute;
   width: 30px;
   float: right;
@@ -105,39 +107,11 @@ span.hide-kids:after {
 
 .show-kids span.hide-kids:after {
   transform: rotate(45deg);
-}
-
-
-.burger li.hs-menu-item.hs-menu-depth-1.hs-item-has-children>a {
-  padding-right: 50px;
-}
-
-
-.burger-menu .hs-menu-wrapper.hs-menu-flow-horizontal li.hs-menu-item.hs-menu-depth-2 a {
-  padding-right: 22px;
-  display: inline-block;
-  font-size: 22px;
-  padding: 10px 50px 10px 10px;
-}
-.burger-menu .hs-menu-wrapper.hs-menu-flow-horizontal li.hs-menu-item.hs-menu-depth-2 li.hs-menu-item.hs-menu-depth-3 a {
-  font-size: 16px;
-  padding-right: 70px;
-}
+} */
 
 
 
-li.hs-menu-item.hs-menu-depth-1{
-  border-bottom: 1px solid rgba(255,255,255,.1);
-}
-
-.burger-wrapper{
-  height: 100vh;
-}
-
-
-.menu {
-  width: 100%;
-}
+/* Huvudmeny kategorier */
 
 .menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul li a {
   display: block;
@@ -149,11 +123,52 @@ li.hs-menu-item.hs-menu-depth-1{
   padding: 20px;
 }
 
-.menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul li {
-  display: block;
-  text-align: right;
+/* Undermeny 1 */
+
+
+.burger-menu .hs-menu-wrapper.hs-menu-flow-horizontal li.hs-menu-item.hs-menu-depth-2 a {
+  padding-right: 22px;
+  display: inline-block;
+  font-size: 22px;
+  padding: 10px 50px 10px 10px;
+  content: none;
+
+}
+
+
+/* Undermeny 2 */
+
+
+.burger-menu .hs-menu-wrapper.hs-menu-flow-horizontal li.hs-menu-item.hs-menu-depth-2 li.hs-menu-item.hs-menu-depth-3 a {
+  font-size: 16px;
+  padding-right: 70px;
+}
+
+/* Plus meny */
+
+
+
+.burger-menu li.hs-menu-item.hs-menu-depth-1.hs-item-has-children > :first-child {
   position: relative;
-  height: 100%;
+}
+
+
+.burger-menu li.hs-menu-item.hs-menu-depth-1.hs-item-has-children > :first-child:after{
+  content: '+';
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: 200;
+  padding-left: 0.5%;
+}
+
+
+/* Plus meny slut */
+ 
+
+
+.menu {
+  width: 100%;
 }
 
 .menu ul  {
@@ -173,6 +188,22 @@ li.hs-menu-item.hs-menu-depth-1{
   opacity: .5;
   text-decoration: none;
 }
+
+.menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul li {
+  display: block;
+  text-align: right;
+  position: relative;
+  height: 100%;
+}
+
+li.hs-menu-item.hs-menu-depth-1{
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.burger-wrapper{
+  height: 100vh;
+}
+
 
 .burger-left {
   background-color: #fff;
