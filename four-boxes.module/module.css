@@ -10,8 +10,9 @@
     font-size: 35px;
 }
   
+.box-child-first,
 .box-child {
-    height: 250px;
+    min-height: 250px;
     z-index: 0;
 }
 
@@ -32,4 +33,49 @@
 .overlay:hover .hidden-box-text{
     transform: translateY(-20px);
     opacity: 1;
+}
+
+@media screen and (max-width: 992px) {
+
+.cta {
+    background-color: #fff;
+    max-width: none;
+    color: #000;
+}
+
+.four-boxes-text {
+    transform: none;
+}
+
+.hidden-box-text {
+    transform: none;
+    opacity: 1;
+}
+
+.overlay:hover .four-boxes-text {
+    transform: none;
+    opacity: 1;
+}
+        
+.overlay:hover .hidden-box-text{
+    transform: none;
+    opacity: 1;
+}
+   
+      }
+
+      @media screen and (max-width: 600px) {
+
+.box-child-first {
+    min-height: 125px;
+}
+
+.h2-no-bg-box {
+    font-size: 30px;
+}
+
+.hidden-box-text {
+    font-weight: 500;
+}
+      
 }

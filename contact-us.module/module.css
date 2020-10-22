@@ -3,7 +3,7 @@
 }
 
 .contact-us-image {
-    min-height: 615px;
+    padding-bottom: 50%;
 }
 
 .h2-contact-header {
@@ -12,4 +12,12 @@
 .h5-contact-header {
     font-size: 14px;
     border-bottom: 2px solid #000;
+}
+
+@media screen and (max-width: 600px) {
+
+.h2-contact-header {
+    font-size: 25px;
+}
+                  
 }

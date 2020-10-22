@@ -1,7 +1,7 @@
-<footer class="pt-5 px-5">
+<footer class="pt-1 pt-md-5 px-md-5">
     <div class="footer-padding-wrapper p-4">
         <div class="row footer-row-1">
-            <div class="col-4">
+            <div class="col-sm-4">
                 <h4 class="footer-header pb-2">Hitta oss här</h4>
                 <div class="footer-menu d-flex flex-column">
                     <ul class="address-text pt-1 pl-0">
@@ -13,37 +13,37 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4">
                 <h4 class="footer-header pb-2">Hitta på sidan</h4>
                 <div class="footer-menu d-flex flex-column">
                     {% menu id="{{ module.footer_menu }}" flyouts='false' %}
                 </div>
             </div>
-            <div class="col-4 d-flex flex-column">
+            <div class="col-sm-4 d-flex flex-column">
                 <div class="row">
-                    <div class="col-1">
+                    <div class="col-1 social-media-icons">
                         <a href="{{ module.facebook_link.url.href }}">
                             <i class="fab fa-facebook-square"></i>
                         </a>
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 social-media-icons">
                         <a href="{{ module.twitter_link.url.href }}">
                             <i class="fab fa-twitter-square"></i>
                         </a>
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 social-media-icons">
                         <a href="{{ module.linkedin_link.url.href }}">
                             <i class="fab fa-linkedin"></i>
                         </a>
                     </div>
-                    <div class="col-1">
+                    <div class="col-1 social-media-icons">
                         <a href="{{ module.snapchat_link.url.href }}">
                             <i class="fab fa-snapchat-square"></i>
                         </a>
                     </div>
                 </div>
-                <div class="row d-flex justify-content-end">
-                    <a href="#"><img src="{{ module.hubspot_logo.src }}" class="hubspot-logo d-flex align-self-end pl-5"></a>
+                <div class="row d-flex justify-content-md-end p-4 p-md-0">
+                    <a href="#"><img src="{{ module.hubspot_logo.src }}" class="hubspot-logo d-flex align-self-end pl-md-5"></a>
                 </div>
             </div>
         </div>

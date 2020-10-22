@@ -2,7 +2,6 @@ html{
     z-index: 0;
     position: relative;
     overflow-x: hidden;
-
 }
 body {
     margin: 0;
@@ -51,7 +50,7 @@ body > .container-fluid {
     transition: all ease .3s;
 }
 
-.cta {
+.cta, .cta-blue-styling {
     z-index: 0;
     border: 1px solid #fff;
     background-color: none;
@@ -72,6 +71,7 @@ body > .container-fluid {
     border: 2px solid #000;
     cursor: pointer;
 }
+
 
 .cta:hover {
     color: #fff;
@@ -229,4 +229,37 @@ ul.hs-error-msgs.inputs-list:after {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     margin-top: -5px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+.cta {
+    background-color: #fff;
+    max-width: none;
+    color: #000;
+}
+
+.cta-blue-styling {
+    background-color: #0090d6;
+    color: #fff;
+    border: none;
+}
+
+.overlay:after {
+    opacity: .8;
+}
+        
+.overlay--hover:hover:after {
+    opacity: .8;
+}
+        
+      }
+
+@media screen and (max-width: 600px) {
+
+.cta-contact-styling {
+    color: #fff;
+}
+
 }

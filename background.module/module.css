@@ -1,5 +1,5 @@
 .background-module-img{
-    height: 60vh;
+    height: 80vh;
     min-height: 600px;
 }
 .rocket-icon{
@@ -14,3 +14,20 @@
 .big-moving-text-bg-module {
     font-size: 75px;
 }
+
+@media screen and (max-width: 992px) {
+
+.big-moving-text-bg-module {
+        font-size: 65px;
+        }
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .rocket-icon{
+        height: 40px;
+    }
+    .big-moving-text-bg-module {
+        font-size: 32px;
+    }
+  }

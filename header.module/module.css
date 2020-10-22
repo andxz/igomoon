@@ -1,3 +1,10 @@
+header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}
+
 .header-wrapper{
   width: 100%;
 }
@@ -8,6 +15,22 @@
     max-height: 30px;
     position: relative;
     z-index: 100000;
+}
+
+.burger-wrapper{
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+
+.burger-wrapper:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background-color: #000;
+  opacity: .8;
+  height: 100%;
+  width: 100%;
 }
 
 .burger-menu {
@@ -24,10 +47,8 @@
   width: 100%;
   top:0;
   right:0;
-  overflow: auto;
-  height: 100vh;
-  background: rgba(28,30,33,.1);
-  transition: all .1s ease-in;
+  height: 100%;
+  transition: all .1s ease-in-out;
 }
 
 .mobile-toggle {
@@ -58,13 +79,11 @@
   position: absolute;
   top: 10px;
   transition: all .2s linear;
-
 }
 
 .menu-open .burger-menu-icon {
   visibility: hidden;
 }
-
 
 .menu-open .burger-menu-icon:before {
   visibility: visible;
@@ -80,37 +99,6 @@
   background-color: #fff;
 }
 
-/* span.hide-kids {
-  position: absolute;
-  width: 30px;
-  float: right;
-  top: 5px;
-  bottom: 5px;
-  right: 20px;
-  height: 60px;
-  z-index: 1;
-  cursor: pointer;
-}
-
-span.hide-kids:after {
-  content: '+';
-  position: absolute;
-  font-size: 30px;
-  color: white;
-  font-weight: 100;
-  transform: rotate(0);
-  transition: all .2s ease;
-  top: 50%;
-  margin-top: -10px;
-  right: 0;
-}
-
-.show-kids span.hide-kids:after {
-  transform: rotate(45deg);
-} */
-
-
-
 /* Huvudmeny kategorier */
 
 .menu .hs-menu-wrapper.hs-menu-flow-horizontal>ul li a {
@@ -125,33 +113,27 @@ span.hide-kids:after {
 
 /* Undermeny 1 */
 
-
 .burger-menu .hs-menu-wrapper.hs-menu-flow-horizontal li.hs-menu-item.hs-menu-depth-2 a {
   padding-right: 22px;
   display: inline-block;
   font-size: 22px;
-  padding: 10px 50px 10px 10px;
+  padding: 10px 40px 10px 10px;
   content: none;
-
 }
 
 
 /* Undermeny 2 */
 
-
 .burger-menu .hs-menu-wrapper.hs-menu-flow-horizontal li.hs-menu-item.hs-menu-depth-2 li.hs-menu-item.hs-menu-depth-3 a {
   font-size: 16px;
-  padding-right: 70px;
+  padding-right: 60px;
 }
 
 /* Plus meny */
 
-
-
 .burger-menu li.hs-menu-item.hs-menu-depth-1.hs-item-has-children > :first-child {
   position: relative;
 }
-
 
 .burger-menu li.hs-menu-item.hs-menu-depth-1.hs-item-has-children > :first-child:after{
   content: '+';
@@ -161,11 +143,6 @@ span.hide-kids:after {
   font-weight: 200;
   padding-left: 0.5%;
 }
-
-
-/* Plus meny slut */
- 
-
 
 .menu {
   width: 100%;
@@ -200,14 +177,15 @@ li.hs-menu-item.hs-menu-depth-1{
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
 
-.burger-wrapper{
-  height: 100vh;
-}
-
-
 .burger-left {
+  display: inline;
   background-color: #fff;
   height: 100%;
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .help-icon{
@@ -233,6 +211,9 @@ li.hs-menu-item.hs-menu-depth-1{
   z-index: 2;
   width: 100%;
   margin: 0;
+  overflow: scroll;
+  height: 100%;
+  margin-top: 80px;
 }
 
 .burger-right:before {
@@ -240,11 +221,18 @@ li.hs-menu-item.hs-menu-depth-1{
   display: block;
   position: absolute;
   z-index: -2;
-  background-color: #000;
-  opacity: .8;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
 }
 
+
+@media screen and (max-width: 600px) {
+
+.burger-left {
+  display: none;
+}
+        
+  }
+  
