@@ -1,24 +1,16 @@
 .row-two-wrapper{
     border-right: 2px solid white;
 }
-
 .h3-two-small-boxes {
     font-size: 25px;
 }
-
 @media screen and (max-width: 992px) {
-
     .row-two-wrapper {
         border-right: none;
     }
-
-      }
-
-      @media screen and (max-width: 600px) {
-
-
-        .small-text-two-boxes{
-            font-size: 15px;
-        }
-              
-        }
+}
+@media screen and (max-width: 600px) {
+    .small-text-two-boxes{
+        font-size: 15px;
+    }
+}

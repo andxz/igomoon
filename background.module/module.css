@@ -18,16 +18,15 @@
 @media screen and (max-width: 992px) {
 
 .big-moving-text-bg-module {
-        font-size: 65px;
-        }
-  }
+    font-size: 65px;
+    }
+}
 
-  @media screen and (max-width: 600px) {
-
+@media screen and (max-width: 600px) {
     .rocket-icon{
         height: 40px;
     }
     .big-moving-text-bg-module {
         font-size: 32px;
     }
-  }
+}

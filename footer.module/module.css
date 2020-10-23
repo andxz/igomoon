@@ -37,10 +37,6 @@ footer {
     display: none;
 }
 
-.social-media-icons{
-    visibility: visible;
-}
-
 .fab {
     font-size: 28px;
     color: #000;
@@ -68,11 +64,3 @@ footer {
     font-size: 12px;
     font-weight: 500;
 }
-
-@media screen and (max-width: 992px) {
-
-.social-media-icons{
-    visibility: hidden;
-}
-
-      }

@@ -1,23 +1,20 @@
-<div class="background-module-img bg d-flex justify-content-center aligns-items-center flex-wrap flex-column p-4 p-lg-5" style="background-image:url({{module.bg_img.src}});">
-
+<div class="background-module-img bg d-flex justify-content-center aligns-items-center flex-wrap flex-column p-4 p-lg-5"
+    style="background-image:url({{module.bg_img.src}});">
     <div class="background-module-text-box text-white">
-        
         <div class="background-module-small-text-box mw-500">
             <div class="row">
                 <div class="col-2 d-flex justify-content-end p-1 p-md-0">
                     <img src="{{ module.rocket_icon.src }}" class="rocket-icon p-0">
                 </div>
                 <div class="col-12 col-md-10">
-                    <h5 class="small-header-name-bg-module d-inline-block underline font-weight-bold pb-2">{{ module.small_header_name }}</h5>
+                    <h5 class="small-header-name-bg-module d-inline-block underline font-weight-bold pb-2">{{
+                        module.small_header_name }}</h5>
                     <p class="small-text-bg-module">{{ module.small_text }}</p>
                 </div>
             </div>
         </div>
-
         <h1 class="big-moving-text-bg-module font-weight-bold m-0 mw-800 pb-3 pb-md-5">{{ module.big_moving_text }}</h1>
-        
-        <a href="{{ module.bg_button_link.url.href }}" class="cta d-flex justify-content-center flex-column"> {{ module.bg_button_name }}</a>
-
+        <a href="{{ module.bg_button_link.url.href }}" class="cta d-flex justify-content-center flex-column"> {{
+            module.bg_button_name }}</a>
     </div>
-
 </div>
