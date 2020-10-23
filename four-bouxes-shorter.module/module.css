@@ -12,17 +12,14 @@
 .box-child-short {
     min-height: 150px;
 }
-
 .blog-name {
     transform: translateY(-20px);
     opacity: 0;
 }
-
 .blog-author {
     transform: translateY(20px);
     opacity: 0;
 }
-
 .overlay:hover .blog-name,
 .overlay:hover .blog-author {
     transform: translateY(0px);

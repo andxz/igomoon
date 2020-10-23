@@ -34,11 +34,7 @@
     transform: none;
 }
 
-.hidden-box-text {
-    transform: none;
-    opacity: 1;
-}
-
+.hidden-box-text,
 .overlay:hover .four-boxes-text,
 .overlay:hover .hidden-box-text {
     transform: none;

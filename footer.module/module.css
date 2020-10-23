@@ -1,65 +1,50 @@
 footer {
     background-color: #ececec;
 }
-
 .footer-row-1{
     min-height: 300px;
     border-bottom: 3px solid #000;
 }
-
 .footer-header{
     font-size: 18px;
     border-bottom: 2px solid #000;
-    display: inline-block;
     font-weight: 600;
 }
-
 .footer-menu ul  {
     padding-left: 0px;
     list-style-type: none;
     font-weight: 600;
     font-size: 14px;
 }
-
 .footer-menu li a{
     text-decoration: none;
     color: #000;
     padding-right: 30px;
 }
-
 .footer-menu li a:hover{
     opacity: .5;
     text-decoration: none;
 }
-
-
 .footer-menu .hs-menu-children-wrapper {
     display: none;
 }
-
 .fab {
     font-size: 28px;
     color: #000;
-
 }
-
 .fab:hover {
     opacity: .5;
 }
-
 .hubspot-logo {
     max-height: 75px;
 }
-
 .medlem {
     font-size: 10px;
     font-weight: 600;
 }
-
 .footer-image {
     max-height: 25px;
 }
-
 .copyright {
     font-size: 12px;
     font-weight: 500;
